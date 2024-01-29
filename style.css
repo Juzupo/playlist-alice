@@ -1,9 +1,10 @@
 body {
-  background-image: linear-gradient(
-    #AC87C5,
-    #E0AED0
-  );
-  height: 100vh;
+  width: 100%;
+  max-width: 100vw;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-image: linear-gradient(#AC87C5,#E0AED0,#AC87C5);
   color: white;
   font-family: sans-serif;
   display: flex;
@@ -95,4 +96,10 @@ button {
   justify-content: space-between;
   font-size: smaller;
   margin-top: 0.5em;
+}
+
+@media(max-width: 800px) {
+  music-container {
+    min-width: 100%;
+  }
 }
